@@ -1,0 +1,15 @@
+services:
+  credit-risk-app:
+    build: .
+    container_name: credit_risk_platform
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    volumes:
+      # Mount the real dataset and trained model artifacts from the host so
+      # the evaluator's already-downloaded Kaggle data and locally trained
+      # model are used directly -- nothing dataset-related is baked into the image.
+      - ./data:/app/data
+      - ./models:/app/models
+    restart: unless-stopped

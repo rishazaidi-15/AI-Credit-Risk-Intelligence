@@ -1,0 +1,29 @@
+# --- Core data handling ---
+pandas==2.2.2
+numpy==1.26.4
+
+# --- Machine Learning ---
+scikit-learn==1.5.1
+xgboost==2.1.0
+joblib==1.4.2
+
+# --- Explainability ---
+shap==0.46.0
+
+# --- Database ---
+sqlalchemy==2.0.32
+
+# --- Talk-to-Data: SQL validation ---
+sqlglot==25.18.0
+
+# --- LLM Provider (Anthropic) ---
+anthropic==0.34.2
+
+# --- UI ---
+streamlit==1.37.1
+
+# --- Configuration & environment ---
+python-dotenv==1.0.1
+
+# --- Testing ---
+pytest==8.3.2
