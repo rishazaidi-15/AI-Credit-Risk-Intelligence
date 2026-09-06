@@ -1,0 +1,80 @@
+{
+  "trained_at_utc": "2026-09-05T11:55:33.772655+00:00",
+  "best_model_name": "xgboost",
+  "numeric_features": [
+    "CNT_CHILDREN",
+    "AMT_INCOME_TOTAL",
+    "AMT_CREDIT",
+    "AMT_ANNUITY",
+    "AMT_GOODS_PRICE",
+    "DAYS_BIRTH",
+    "DAYS_REGISTRATION",
+    "DAYS_ID_PUBLISH",
+    "OWN_CAR_AGE",
+    "CNT_FAM_MEMBERS",
+    "REGION_RATING_CLIENT",
+    "REGION_POPULATION_RELATIVE",
+    "EXT_SOURCE_1",
+    "EXT_SOURCE_2",
+    "EXT_SOURCE_3",
+    "OBS_30_CNT_SOCIAL_CIRCLE",
+    "DEF_30_CNT_SOCIAL_CIRCLE",
+    "AMT_REQ_CREDIT_BUREAU_YEAR",
+    "DAYS_LAST_PHONE_CHANGE",
+    "DAYS_EMPLOYED",
+    "CREDIT_INCOME_RATIO",
+    "ANNUITY_INCOME_RATIO",
+    "CREDIT_TERM",
+    "AGE_YEARS",
+    "EMPLOYED_YEARS",
+    "EXT_SOURCE_MEAN",
+    "IS_RETIRED_OR_UNEMPLOYED_FLAG"
+  ],
+  "categorical_features": [
+    "NAME_CONTRACT_TYPE",
+    "CODE_GENDER",
+    "FLAG_OWN_CAR",
+    "FLAG_OWN_REALTY",
+    "NAME_TYPE_SUITE",
+    "NAME_INCOME_TYPE",
+    "NAME_EDUCATION_TYPE",
+    "NAME_FAMILY_STATUS",
+    "NAME_HOUSING_TYPE",
+    "OCCUPATION_TYPE",
+    "ORGANIZATION_TYPE",
+    "WEEKDAY_APPR_PROCESS_START"
+  ],
+  "n_train_rows": 40000,
+  "n_test_rows": 10000,
+  "test_metrics": {
+    "roc_auc": 0.7447,
+    "pr_auc": 0.2213,
+    "precision": 0.1833,
+    "recall": 0.6037,
+    "f1_score": 0.2812,
+    "confusion_matrix": [
+      [
+        7030,
+        2165
+      ],
+      [
+        319,
+        486
+      ]
+    ],
+    "decision_threshold": 0.5,
+    "inference_ms_per_row": 0.1684
+  },
+  "probability_percentiles": {
+    "50": 0.3262,
+    "75": 0.5121,
+    "90": 0.6775,
+    "95": 0.7596,
+    "99": 0.8576
+  },
+  "risk_thresholds": {
+    "medium": 0.3,
+    "high": 0.6
+  },
+  "random_seed": 42
+}
