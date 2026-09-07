@@ -91,12 +91,12 @@ def render_home() -> None:
 
 
 PAGES = {
-    "🏠 Home / Overview": render_home,
-    "📊 EDA & Business Insights": eda.render,
-    "🎯 Risk Prediction": prediction.render,
-    "🔍 Explainability": explainability.render,
-    "📋 Decision Rules": rules.render,
-    "💬 AI Assistant": chatbot.render,
+    " Home / Overview": render_home,
+    " EDA & Business Insights": eda.render,
+    " Risk Prediction": prediction.render,
+    " Explainability": explainability.render,
+    " Decision Rules": rules.render,
+    " AI Assistant": chatbot.render,
 }
 
 
