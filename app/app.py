@@ -15,7 +15,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 import streamlit as st
 
-from app.pages import chatbot, eda, explainability, prediction, rules
+from pages import chatbot, eda, explainability, prediction, rules
 from src.data.loader import DatasetNotFoundError, DatasetValidationError, check_dataset_availability, load_raw_data
 from src.eda.analysis import data_quality_report, dataset_summary
 from src.ml.predict import is_model_available

@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import streamlit as st
 
-from app.components.ui_components import dataset_status_banner, error_banner
+from components.ui_components import dataset_status_banner, error_banner
 from src.data.loader import DatasetNotFoundError, DatasetValidationError, check_dataset_availability, load_raw_data
 from src.eda.analysis import categorize_features, data_quality_report, dataset_summary
 from src.utils.config import settings
