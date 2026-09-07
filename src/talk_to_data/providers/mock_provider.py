@@ -698,4 +698,4 @@ class MockProvider(LLMProvider):
                 return self._format_single_group_rate_answer(question, first_row)
             return self._format_ranking_table_answer(data, rate_key)
 
-        return self._format_generic_answer(data)d
+        return self._format_generic_answer(data)
